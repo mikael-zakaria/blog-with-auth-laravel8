@@ -1,5 +1,17 @@
 # blog-with-auth-laravel8
 
+1. Admin Dashboard
+
+    <img src="https://github.com/mikael-zakaria/blog-with-auth-laravel8/blob/master/preview_web_img/admin_dashboard.png" alt="Alt text" title="Admin Dashboard" style="display: block; width: 70%;">
+
+2. Admin Login
+
+    <img src="https://github.com/mikael-zakaria/blog-with-auth-laravel8/blob/master/preview_web_img/admin_login.png" alt="Alt text" title="Admin Dashboard" style="display: block; width: 70%;">
+    
+3. User Dashboard 
+
+    <img src="https://github.com/mikael-zakaria/blog-with-auth-laravel8/blob/master/preview_web_img/homepage.png" alt="Alt text" title="Admin Dashboard" style="display: block; width: 70%;">
+
 
 # How to Use
 
