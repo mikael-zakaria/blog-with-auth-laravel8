@@ -6,11 +6,11 @@
 
 2. Admin Login
 
-    <img src="https://github.com/mikael-zakaria/blog-with-auth-laravel8/blob/master/preview_web_img/admin_login.png" alt="Alt text" title="Admin Dashboard" style="display: block; width: 70%;">
+    <img src="https://github.com/mikael-zakaria/blog-with-auth-laravel8/blob/master/preview_web_img/admin_login.png" alt="Alt text" title="Admin Login" style="display: block; width: 70%;">
     
 3. User Dashboard 
 
-    <img src="https://github.com/mikael-zakaria/blog-with-auth-laravel8/blob/master/preview_web_img/homepage.png" alt="Alt text" title="Admin Dashboard" style="display: block; width: 70%;">
+    <img src="https://github.com/mikael-zakaria/blog-with-auth-laravel8/blob/master/preview_web_img/homepage.png" alt="Alt text" title="User Dashboard" style="display: block; width: 70%;">
 
 
 # How to Use
