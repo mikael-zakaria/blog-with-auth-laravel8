@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
@@ -46,19 +47,16 @@ class PostController extends Controller
             'picture'   => 'required|file|image|mimes:png,jpg,jpeg|max:2000'
         ]);
 
-        // Rename Picture File Name
-        $extFile = $request->picture->getClientOriginalExtension();
-        $fileName = 'post-'.time().".".strtolower($extFile);
-
-        // Store Picture to public/images/admin/posts
-        $path = $request->picture->move('images/admin/posts', $fileName);
+        //upload image
+        $image = $request->file('picture');
+        $image->storeAs('public/posts', $image->hashName());
 
         // Make A Array
         $postData = [
             'title'     => $request->input('title'),
             'user_id'   => $request->input('user_id'),
             'content'   => $request->input('content'),
-            'picture'   => $fileName
+            'picture'   => $image->hashName(),
         ];
 
         // Save In Database
@@ -138,6 +136,9 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
+        //delete image
+        Storage::delete('public/posts/'.$post->picture);
+
         $post->delete();
 
         return redirect('/admin/post')->with('message', "post deleted successfully");

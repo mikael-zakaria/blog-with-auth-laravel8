@@ -41,7 +41,7 @@
                         <div class="row">
 
                             <div class="col-12 text-center mb-3">
-                                <img src="{{ url('images/admin/posts/', $post->picture) }}" class="img-fluid" alt="">
+                                <img src="{{ asset('storage/posts/'.$post->picture) }}" class="img-fluid" alt="">
                             </div>
 
                             <div class="col-12">
