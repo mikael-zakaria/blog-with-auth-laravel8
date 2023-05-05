@@ -15,20 +15,28 @@
 
 # How to Use
 
-1. Create Database 
+1. Composer 
+    ```
+    composer update
+    composer install
+    ```
+2. Command line & Setting your database 
+    ```
+    cp .env.example .env
+    ```
+3. Create Database 
     ```
     php artisan migrate
     ```
-2. After that
+4. After that
     ```
     php artisan db:seed --class=UsersSeeder
-    php artisan db:seed --class=PostssSeeder
     ```
-4. and Finally
+5. and Finally
     ```
     php artisan serve
     ```
-5. Enjoy the program
+6. Enjoy the program
 
 
 # next-update
